@@ -19,7 +19,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
     public VentanaPrincipal(){
         lista = new ListaPersonas(); 
         inicio();
-        setTitle(“Personas”); 
+        setTitle("Personas"); 
         setSize(270,350); 
         setLocationRelativeTo(null); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,36 +30,36 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
         contenedor = getContentPane(); 
         contenedor.setLayout(null); 
         nombre = new JLabel();
-        nombre.setText(“Nombre:”);
+        nombre.setText("Nombre:");
         nombre.setBounds(20, 20, 135, 23); 
         campoNombre = new JTextField();
         campoNombre.setBounds(105, 20, 135, 23);
         apellidos = new JLabel();
-        apellidos.setText(“Apellidos:”); 
+        apellidos.setText("Apellidos:"); 
         apellidos.setBounds(20, 50, 135, 23);
         campoApellidos = new JTextField();
         campoApellidos.setBounds(105, 50, 135, 23);
 
         teléfono = new JLabel();
-    teléfono.setText(“Teléfono:”);
+    teléfono.setText("Teléfono:");
     teléfono.setBounds(20, 80, 135, 23); 
     campoTeléfono = new JTextField();
     campoTeléfono.setBounds(105, 80, 135, 23);
     dirección = new JLabel();
-    dirección.setText(“Dirección:”);
+    dirección.setText("Dirección:");
     dirección.setBounds(20, 110, 135, 23);
     campoDirección = new JTextField();
     campoDirección.setBounds(105, 110, 135, 23);
     añadir = new JButton();
-    añadir.setText(«Añadir»);
+    añadir.setText("Añadir");
     añadir.setBounds(105, 150, 80, 23); 
     añadir.addActionListener(this);
     eliminar= new JButton();
-    eliminar.setText(“Eliminar”);
+    eliminar.setText("Eliminar");
     eliminar.setBounds(20, 280, 80, 23); 
     eliminar.addActionListener(this);
     borrarLista= new JButton();
-    borrarLista.setText(“Borrar Lista”);
+    borrarLista.setText("Borrar Lista");
     borrarLista.setBounds(120, 280, 120, 23); 
     borrarLista.addActionListener(this);
 
@@ -119,8 +119,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
             } 
             
             else { 
-            JOptionPane.showMessageDialog(null, “Debe seleccionar un
-            elemento”,”Error”,
+            JOptionPane.showMessageDialog(null, "Debe seleccionar un elemento","Error",
             JOptionPane.ERROR_MESSAGE);
             }
             }
